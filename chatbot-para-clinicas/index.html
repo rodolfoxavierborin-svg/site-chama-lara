@@ -67,8 +67,11 @@
 
     <!-- Navbar -->
     <header class="container mx-auto px-5 md:px-4 pt-6 md:pt-5 pb-0 flex justify-center items-center relative z-10 reveal active">
-        <!-- OTIMIZAÇÃO: Prioridade alta de carregamento (LCP) -->
-        <img src="assets/logo-chamalara.png" alt="Lara IA Logo" width="220" height="60" fetchpriority="high" loading="eager" decoding="async" class="w-[160px] md:w-[220px] h-auto object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+        <!-- OTIMIZAÇÃO: Tag Picture com WebP e fallback PNG de Alta Prioridade (LCP) -->
+        <picture>
+            <source srcset="assets/logo-chamalara.webp" type="image/webp">
+            <img src="assets/logo-chamalara.png" alt="Lara IA Logo" width="220" height="60" fetchpriority="high" loading="eager" decoding="async" class="w-[160px] md:w-[220px] h-auto object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+        </picture>
     </header>
 
     <!-- Hero Section -->
