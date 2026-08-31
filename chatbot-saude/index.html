@@ -65,11 +65,12 @@
     <div class="absolute top-0 left-1/2 md:left-1/4 -translate-x-1/2 md:translate-x-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-emerald-600/20 rounded-full blur-[80px] md:blur-[120px] pointer-events-none z-0"></div>
     <div class="hidden md:block absolute top-40 right-10 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
 
-    <!-- Navbar -->
+   <!-- Navbar -->
     <header class="container mx-auto px-5 md:px-4 pt-6 md:pt-5 pb-0 flex justify-center items-center relative z-10 reveal active">
+        <!-- OTIMIZAÇÃO: Tag Picture com WebP e fallback PNG de Alta Prioridade (LCP) -->
         <picture>
-            <source srcset="assets/logo-chamalara.webp" type="image/webp">
-            <img src="chatbot-saude/assets/logo-chamalara.webp" alt="Lara IA Logo" width="220" height="60" fetchpriority="high" loading="eager" decoding="async" class="w-[160px] md:w-[220px] h-auto object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+            <source srcset="/chatbot-para-clinicas/assets/logo-chamalara.webp" type="image/webp">
+            <img src="/chatbot-para-clinicas/assets/logo-chamalara.webp" alt="Lara IA Logo" width="220" height="60" fetchpriority="high" loading="eager" decoding="async" class="w-[160px] md:w-[220px] h-auto object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.2)]">
         </picture>
     </header>
 
